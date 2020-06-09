@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald|Questrial&display=swap");
+
+body {
+  font-family: "Questrial", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+h1,
+h2,
+div {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  padding: 10px 20px 0px 40px;
+  font-family: "Oswald", sans-serif;
+  font-size: 35px;
+  color: #f6d671;
+}
+
+h2 {
+  padding: 0px 20px 10px 40px;
+  font-family: "Oswald", sans-serif;
+  font-size: 22px;
+  color: #d6d6d6;
+}
+
+h1,
+h2 {
+  animation-duration: 3s;
+  animation-name: slide-right;
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: -20%;
+    width: 100%;
+  }
+}
+
+#logo {
+  width: 100px;
+}
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  background: linear-gradient(to right, #1c1d22, #232428, #3c3b41, #4f4e52);
+}
+
+.header-image {
+  height: 380px;
+  background-image: url("resources/header_image.jpg");
+  background-position: center;
+  background-size: 100%;
+}
+
+#header-img {
+  width: 100vw;
+  animation-duration: 3s;
+  animation-name: slide-left;
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 20%;
+    width: 100%;
+  }
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(350px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  text-align: center;
+}
+
+.wrapper > div:nth-child(odd) {
+  background-color: #232428;
+  color: #f6d671;
+}
+
+.wrapper > div:nth-child(even) {
+  background-color: #f6d671;
+  color: #232428;
+}
+
+.box:hover {
+  box-shadow: inset 5px 10px 15px black;
+}
+
+.bike-image {
+  margin: 20px 0px 20px 0px;
+}
+.bike-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.bike-description {
+  font-size: 15px;
+  line-height: 1.2em;
+  padding: 20px 30px 20px 30px;
+}
+
+.button-even {
+  background: transparent;
+  border: #232428 1px solid;
+  border-radius: 20px;
+  padding: 5px 20px 5px 20px;
+  color: #232428;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.button-even:hover {
+  background: #232428;
+  border: #232428 1px solid;
+  border-radius: 20px;
+  padding: 5px 20px 5px 20px;
+  color: #f6d671;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  transition: 0.5s;
+}
+
+.button-odd {
+  background: transparent;
+  border: #f6d671 1px solid;
+  border-radius: 20px;
+  padding: 5px 20px 5px 20px;
+  color: #f6d671;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.button-odd:hover {
+  background: #f6d671;
+  border: #f6d671 1px solid;
+  border-radius: 20px;
+  padding: 5px 20px 5px 20px;
+  color: #232428;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  transition: 0.5s;
+}
+
+.images {
+  width: 350px;
+}
+
+.images {
+  animation-duration: 3s;
+  animation-name: opacity;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.images-transform {
+  transform: scaleX(-1);
+}
+
+@media only screen and (max-width: 700px) {
+  .images {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(200px, auto);
+  }
+  .wrapper > div:nth-child(3) {
+    background-color: #f6d671;
+    color: #232428;
+  }
+  .wrapper > div:nth-child(4) {
+    background-color: #232428;
+    color: #f6d671;
+  }
+  #button3 {
+    background: transparent;
+    border: #232428 1px solid;
+    border-radius: 20px;
+    padding: 5px 20px 5px 20px;
+    color: #232428;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  #button3:hover {
+    background: #232428;
+    border: #232428 1px solid;
+    border-radius: 20px;
+    padding: 5px 20px 5px 20px;
+    color: #f6d671;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    transition: 0.5s;
+  }
+
+  #button4 {
+    background: transparent;
+    border: #f6d671 1px solid;
+    border-radius: 20px;
+    padding: 5px 20px 5px 20px;
+    color: #f6d671;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  #button4:hover {
+    background: #f6d671;
+    border: #f6d671 1px solid;
+    border-radius: 20px;
+    padding: 5px 20px 5px 20px;
+    color: #232428;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    transition: 0.5s;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .header-image {
+    height: 300px;
+    background-image: url("resources/header_image.jpg");
+    background-position: center;
+    background-size: 100%;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(200px, auto);
+  }
+  .wrapper > div:nth-child(odd) {
+    background-color: #232428;
+    color: #f6d671;
+  }
+
+  .wrapper > div:nth-child(even) {
+    background-color: #f6d671;
+    color: #232428;
+  }
+  .button-odd,
+  #button3 {
+    background: transparent;
+    border: #f6d671 1px solid;
+    border-radius: 20px;
+    padding: 5px 20px 5px 20px;
+    color: #f6d671;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .button-odd:hover,
+  #button3:hover {
+    background: #f6d671;
+    border: #f6d671 1px solid;
+    border-radius: 20px;
+    padding: 5px 20px 5px 20px;
+    color: #232428;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    transition: 0.5s;
+  }
+
+  .button-even,
+  #button4 {
+    background: transparent;
+    border: #232428 1px solid;
+    border-radius: 20px;
+    padding: 5px 20px 5px 20px;
+    color: #232428;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .button-even:hover,
+  #button4:hover {
+    background: #232428;
+    border: #232428 1px solid;
+    border-radius: 20px;
+    padding: 5px 20px 5px 20px;
+    color: #f6d671;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    transition: 0.5s;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .header-image {
+    height: 220px;
+    background-image: url("resources/header_image.jpg");
+    background-position: center;
+    background-size: 100%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .header-image {
+    height: 180px;
+    background-image: url("resources/header_image.jpg");
+    background-position: center;
+    background-size: 100%;
+  }
+}
